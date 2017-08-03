@@ -19,10 +19,11 @@ cd config
 ln -s environments/dev/settings_local.py settings_local.py
 
 cd ..
+rm setup.sh
+
 rm -rf .git
 git init
 git add .
 git commit -m "Initial commit."
 
 echo "Done.  Run \`workon \${PWD##*/}\` and you're on your way."
-rm setup.sh
